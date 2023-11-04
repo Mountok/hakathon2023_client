@@ -21,29 +21,34 @@ const AllEvents = () => {
           });    
         }
     },[allEvents])
-    useEffect(()=>{
-        let newPost = currentEvents.filter(value => value.event_name.toLowerCase().includes(searchValue.toLowerCase()))
-        setCurrentEvents(newPost)
-      },[searchValue,searchType,searchLocation])
-
-      useEffect(()=>{
-        let newPost = currentEvents.filter(value => value.event_type.toLowerCase().includes(searchType.toLowerCase()))
-        setCurrentEvents(newPost)
-      },[searchType])
-      useEffect(()=>{
-        let newPost = currentEvents.filter(value => value.event_location.toLowerCase().includes(searchLocation.toLowerCase()))
-        setCurrentEvents(newPost)
-      },[searchLocation])
-
-    useEffect(()=>{
-        if(searchValue.length == 0 && searchType.length == 0 && searchLocation.length == 0){
-        setCurrentEvents(allEvents)
-        }
+    
+    
        
        
         
-    },[searchValue,searchType,searchLocation])
+    
 
+    const handleClick = (e) => {
+        e.preventDefault()
+
+        if(searchValue.length == 0 && searchType.length == 0 && searchLocation.length == 0) {
+            setCurrentEvents(allEvents)
+        }else{
+            let newPost = currentEvents;
+            if(searchValue.length != 0) {
+                newPost = newPost.filter(value => value.event_name.toLowerCase().includes(searchValue.toLowerCase()))
+            }
+            if(searchType.length != 0) {
+                newPost = newPost.filter(value => value.event_type.toLowerCase().includes(searchType.toLowerCase()))
+            }
+            if(searchLocation.length != 0) {
+                newPost = newPost.filter(value => value.event_location.toLowerCase().includes(searchLocation.toLowerCase()))
+            }
+            setCurrentEvents(newPost) 
+        }
+
+        
+    }
   return (
     <div className='all_events_block'>
         <div className="events_block_header">
@@ -64,6 +69,8 @@ const AllEvents = () => {
                 onChange={(e)=>{setSearchLoction(e.target.value)}} value={searchLocation}
                 type="text" 
                 placeholder='Место проведения'/>
+               
+                <button onClick={(e)=>handleClick(e)} className='event_filter_btn'>Поиск</button>
             </form>
         </div>
         
