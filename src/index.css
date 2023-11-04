@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0px 200px;
+    background: url(./assets/images/ornament.jpg) repeat;
+    background-size: 200px 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+#root{
+    padding: 0 40px;
+    flex:1;
+    background-color: #eafcd5;
+}

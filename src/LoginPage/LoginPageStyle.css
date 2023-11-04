@@ -1,0 +1,73 @@
+.login_wrapper {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .login_form {
+    box-shadow: 0 0 10px rgb(173, 173, 173);
+    position: relative;
+    padding: 80px 30px 30px 30px;
+    border-radius: 10px;
+    background: rgba(63, 247, 63, 0.546);
+  }
+  .login_form_user_circle {
+    position: absolute;
+    left: 50%;
+    top: -135px;
+    transform: translateX(-50%);
+    font-size: 200px;
+  }
+  .login_form_input {
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .login_form_input:hover {
+    box-shadow: 0 0 20px rgb(173, 173, 173);
+  }
+  
+  .login_form_input .login_form_input_icon {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .login_form_input input {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    border: none;
+    background-color: rgb(237, 237, 237);
+  }
+  .login_form form > p {
+    color: #252525;
+    font-size: 30px;
+    letter-spacing: 1;
+    margin-bottom: 5px;
+  }
+  .login_form form button {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .login_form form button:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgb(173, 173, 173);
+  }
+  

@@ -1,0 +1,93 @@
+.head_page {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .head_page_title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+  .head_page_title_header {
+    position: relative;
+  }
+  
+  .head_page_title_header h1 {
+    user-select: none;
+    color: #111316;
+    line-height: 80px;
+    margin: 0 0 40px 0;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: 80px;
+  }
+  
+  .head_page_title_header h1 span {
+    color: #689f38;
+  }
+  
+  .head_page_title_body p {
+    user-select: none;
+  
+    width: 600px;
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: rgb(98, 98, 98);
+  }
+  .head_page_title_body p span {
+    font-weight: 700;
+    color: #292f36;
+  }
+  .head_page_title_body_controlls {
+    padding-top: 50px;
+  }
+  .head_page_title_body_controlls button {
+    color: #f1f8e9;
+    font-family: "Jost", sans-serif;
+    background: #689f38;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 36px;
+    margin: 0 20px 0 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+  
+    transition: all 150ms ease-out;
+  }
+  .head_page_title_body_controlls-btn1 {
+  }
+  .head_page_title_body_controlls-btn2 {
+    color: white;
+    letter-spacing: 1px;
+  }
+  .head_page_title_body_controlls-btn2:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  
+    transform: scale(1.1);
+    transition: all 150ms ease-in;
+  }
+  .head_page_title_body_controlls-btn1:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  
+    transform: scale(1.1);
+    transition: all 150ms ease-in;
+  }
+  
+  .head_page_image_item {
+    width: 750px;
+    height: 500px;
+    border-radius: 52% 48% 20% 80% / 64% 48% 52% 36%;
+    box-shadow: 0 0 20px rgba(87, 87, 87, 0.409);
+    background: url(../assets/images/bg_photo.jpg) no-repeat;
+    background-position: -240px -100px;
+  }
+  
