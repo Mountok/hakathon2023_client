@@ -6,6 +6,7 @@ import WelcomePage from './components/WelcomePage'
 import Events from './components/events/Events'
 import Contacts from './components/contacts/Contacts'
 import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <WelcomePage />
       <Events />
       <Contacts />
+      <Footer />
     </>
   )
 }

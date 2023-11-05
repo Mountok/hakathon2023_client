@@ -5,6 +5,7 @@ import EventsPage from './EventsPage/EventsPage'
 import EventInfo from './components/EventInfo/EventInfo'
 import LoginPage from './LoginPage/LoginPage'
 import OrganizerPage from './components/Organizer/OrganizerPage'
+import NotFound from './NotFoundPage/NotFound'
 const Router = () => {
   return (
     <Routes>
@@ -13,6 +14,7 @@ const Router = () => {
         <Route path='/events' element={<EventsPage/>}/>
         <Route path='/event' element={<EventInfo/>}/>
         <Route path='/orgnize' element={<OrganizerPage/>}/>
+        <Route path='*' element={<NotFound/>}/>
         {/* <Route path='/home' element={<Home/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/profile/:propr' element={<OtherUserScreen/> }/>
