@@ -1,8 +1,87 @@
-# React + Vite
+# HACHATHON 2023
+## _GroznyEvent_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Наше веб-приложение - источник актуальной информации о мероприятиях, которые проходят в Чеченской Республике. От культурных и спортивных событий до образовательных и развлекательных мероприятий, мы предоставляем всю необходимую информацию и возможность онлайн-регистрации.
 
-Currently, two official plugins are available:
+## Технологии
+Технологический стек который испоьзовался во время:
+- [React.js]
+- [Node.js]
+- [Express]
+- [Bcrypt]
+- [Axios]
+- [react-icons]
+- [Yarn]
+_И другие._
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Запуск приложения
+
+Установить [Node.js] и пакетный менеджер [Yarn]
+
+
+Загруpка пакетов
+```sh
+yarn
+```
+Запуск
+```sh
+yarn dev
+```
+После клонируейте репозиторий [сервера], разверните его и перезагрузите front :>
+## License 
+
+MIT
+
+
+   
+   [react-icons]: <https://react-icons.github.io/react-icons>
+   [bcrypt]: <https://www.npmjs.com/package/bcrypt>
+   [node.js]: <http://nodejs.org>
+   [React.js]: <https://react.dev>
+   [express]: <http://expressjs.com>
+   [Axios]: <https://axios-http.com/>
+   [Yarn]: <https://yarnpkg.com/>
+   [сервера]: <https://github.com/Mountok/ITcube_chat-server># HACHATHON 2023
+## _GroznyEvent_
+
+Наше веб-приложение - источник актуальной информации о мероприятиях, которые проходят в Чеченской Республике. От культурных и спортивных событий до образовательных и развлекательных мероприятий, мы предоставляем всю необходимую информацию и возможность онлайн-регистрации.
+
+## Технологии
+Технологический стек который испоьзовался во время:
+- [React.js]
+- [Node.js]
+- [Express]
+- [Bcrypt]
+- [Axios]
+- [react-icons]
+- [Yarn]
+_И другие._
+
+## Запуск приложения
+
+Установить [Node.js] и пакетный менеджер [Yarn]
+
+
+Загруpка пакетов
+```sh
+yarn
+```
+Запуск
+```sh
+yarn dev
+```
+После клонируейте репозиторий [сервера], разверните его и перезагрузите front :>
+## License 
+
+MIT
+
+
+   
+   [react-icons]: <https://react-icons.github.io/react-icons>
+   [bcrypt]: <https://www.npmjs.com/package/bcrypt>
+   [node.js]: <http://nodejs.org>
+   [React.js]: <https://react.dev>
+   [express]: <http://expressjs.com>
+   [Axios]: <https://axios-http.com/>
+   [Yarn]: <https://yarnpkg.com/>
+   [сервера]: <https://github.com/Mountok/ITcube_chat-server>
