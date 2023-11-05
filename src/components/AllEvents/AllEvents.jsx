@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import './AllEventsStyle.css'
 import {FaFilter} from 'react-icons/fa'
 import axios from 'axios'
-
+import {PORT} from '../../assets/dates/port'
 import { useNavigate } from 'react-router-dom'
 const AllEvents = () => {
     const navigate = useNavigate()
@@ -14,7 +14,7 @@ const AllEvents = () => {
 
     useEffect(()=>{
         if(allEvents.length == 0){
-        axios.get('http://localhost:5000/rest-api/getAllEvents').then((response) => {
+        axios.get(`http://localhost:${PORT}/rest-api/getAllEvents`).then((response) => {
         console.log(response.data)    
         setAllEvents(response.data);
         setCurrentEvents(response.data)

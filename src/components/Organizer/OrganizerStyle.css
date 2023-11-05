@@ -1,105 +1,143 @@
-.org_page_wrapper{
-    display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    flex-direction: column;
-    padding-bottom: 50px;
-    font-weight: 600;
+.org_page_wrapper {
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  flex-direction: column;
+  padding-bottom: 50px;
+  font-weight: 600;
 }
-.org_page_header{
-    padding: 30px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.org_page_header {
+  font-family: "Jost", sans-serif;
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.org_page_header_icons{
-    margin-right: 30px;
+.org_page_header_icons {
+  width: 200px;
 }
-.org_page_header > p{
-    display: flex;
-    align-items: center;
-    font-size: 60px;
-
+.org_page_header > p {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
 }
-.org_page_nav{
-    width: 50%;
-    justify-content: space-evenly;
-    display: flex;
-    font-size: 40px;
+.org_page_nav {
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
+  font-size: 40px;
 }
-.org_page_nav p{
-    display: flex;
-    align-items: center;
-}
-.org_page_nav p:nth-child(1).active{
-    color: rgb(0, 217, 0);
-}
-.org_page_nav p:nth-child(2).active{
-    color: red;
-}
-.org_page_nav p:nth-child(1):hover{
-    color: rgb(0, 217, 0);
-}
-.org_page_nav p:nth-child(2):hover{
-    color: red;
-}
-.org_page_content{
-    padding-top: 80px;
-    flex:1;
-}
-.add_form{
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.add_form form{
-    width: 80%;
-}
-.add_form form p{
-    margin: 0;
-
-    font-size: 30px;
-}
-.add_form form input{
-    outline: none;
-    background: none;
-    border: 1px solid black;
-    border:none;
-    outline: none;
-    border-bottom: 2px solid black;
-    font-size: 30px;
-    padding: 1px 30px;
-    margin-bottom: 30px;
+.org_page_nav p {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  color: #292f36;
+  background-color: #689f38;
+  border-radius: 50px;
+  padding: 15px 20px;
+  transition: all 150ms ease-out;
+  box-shadow: 0px 0px 20px #292f3640;
+  cursor: pointer;
 }
 
-.add_form form textarea{
-    border:none;
-    outline: none;
-    border-bottom: 2px solid black;
-    background: none;
-    font-size: 30px;
-    padding: 10px;
-    resize: none;
-    margin-bottom: 30px;
+.org_page_nav button {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  color: #292f36;
+  background-color: #689f38;
+  border-radius: 50px;
+  padding: 15px 20px;
+  transition: all 150ms ease-out;
+  box-shadow: 0px 0px 10px #292f3640;
+  outline: none;
+  border: none;
 
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  transition: all 150ms ease-out;
+}
+.org_page_nav button:hover {
+  transform: scale(1.2);
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.org_page_nav p:nth-child(1).active {
+  color: #292f36;
+  background-color: #689f38;
+  border-radius: 50px;
+  padding: 20px;
+}
+.org_page_nav p:nth-child(2).active {
+}
+.org_page_nav p:nth-child(1):hover {
+  transform: scale(1.2);
+  transition: all 150ms ease-in;
+}
+.org_page_nav p:nth-child(2):hover {
+  transform: scale(1.2);
+  transition: all 150ms ease-in;
+}
+.org_page_content {
+  padding-top: 80px;
+  flex: 1;
+}
+.add_form {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add_form form {
+  width: 80%;
+}
+.add_form form p {
+  font-family: "Jost";
+  margin: 0;
+
+  font-size: 30px;
+}
+.add_form form input {
+  outline: none;
+  background: none;
+  border: 1px solid black;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  font-size: 30px;
+  padding: 1px 30px;
+  margin-bottom: 30px;
 }
 
-.add_form form button{
-    margin-top: 50px;
-    font-size: 30px;
-    padding: 20px;
-    border: none;
-    border-radius: 1px;
-    font-weight: 600;
-    background: rgba(93, 255, 93, 0.562);
+.add_form form textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  background: none;
+  font-size: 30px;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 30px;
 }
 
-.add_form form button:hover{
-    background: rgba(93, 255, 93, 0.945);
+.add_form form button {
+  font-family: "Jost", sans-serif;
+  border: none;
+  border-radius: 50px;
+  margin-top: 50px;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: 600;
 
+  background-color: #689f3894;
+
+  transition: all 200ms ease-out;
 }
 
+.add_form form button:hover {
+  transform: scale(1.2);
+  transition: all 200ms ease-in;
+}
 
-
-
-.delete_form{}
+.delete_form {
+}

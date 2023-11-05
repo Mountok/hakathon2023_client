@@ -1,116 +1,127 @@
 .contact_page {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .contact_block {
-    background: rgb(135, 255, 135);
-    width: 80%;
-    box-shadow: 2px 2px 20px rgba(158, 158, 158, 0.47);
-    display: flex;
-    border-radius: 10px;
-    flex-direction: column;
-  }
-  .send_message {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  .send_message_header {
-    font-size: 50px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .send_message_body {
-  }
-  .send_message_body_form {
-    padding-top: 20px;
-  }
-  .send_message_body_form input::placeholder {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-style: italic;
-    padding-bottom: 10px;
-  }
-  .send_message_body_form input {
-    padding-bottom: 5px;
-    outline: none;
-    margin: 10px;
-    font-size: 25px;
-    background: none;
-    border: none;
-    border-bottom: 2px solid black;
-  }
-  .send_message_body_form_item1 {
-  }
-  .send_message_body_form_item2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .send_message_body_form_item2 textarea::placeholder {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-style: italic;
-  }
-  .send_message_body_form_item2 textarea {
-    resize: none;
-    background-color: rgb(135, 255, 135);
-    font-size: 25px;
-    outline: none;
-  
-    border: none;
-    border-bottom: 2px solid black;
-    margin: 10px;
-  }
-  .send_message_body_form_item2 button {
-    border: none;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 10px 10px;
-    margin: 10px 10px 10px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    font-size: 22px;
-  }
-  .send_message_body_form_item2 button:hover {
-    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform: scale(1.02);
-    box-shadow: 0 0 15px rgb(199, 199, 199);
-  }
-  .contact_info {
-    padding-left: 35px;
-    padding-top: 10px;
-    padding-right: 35px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(93, 243, 98);
-  }
-  .contact_info > .info_links {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    font-weight: 500;
-  }
-  .contact_info p:nth-child(1) {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-  }
-  .contact_info_icons {
-    padding-right: 20px;
-    font-size: 40px;
-  }
-  .social_media a {
-    color: black;
-  }
-  .social_media {
-    font-size: 50px;
-  }
-  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.contact_block {
+  margin-top: 120px;
+  background: none;
+  background-color: #689f3894;
+  width: 80%;
+  box-shadow: 2px 2px 20px rgba(158, 158, 158, 0.47);
+  display: flex;
+  border-radius: 18px;
+
+  flex-direction: column;
+  padding: 30px 10px 20px 10px;
+}
+.send_message {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.send_message_header {
+  color: #292f36;
+  font-family: "Jost", sans-serif;
+  user-select: none;
+  font-size: 56px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.send_message_header span {
+}
+
+.send_message_body {
+}
+.send_message_body_form {
+  padding-top: 20px;
+}
+.send_message_body_form input::placeholder {
+  font-family: "Jost", sans-serif;
+}
+.send_message_body_form input {
+  box-shadow: 0px 0px 15px #ababab;
+  border-radius: 50px;
+  outline: none;
+  margin: 10px;
+  font-size: 25px;
+  background: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+.send_message_body_form_item1 {
+  font-family: "Jost", sans-serif;
+}
+.send_message_body_form_item2 {
+  display: flex;
+  flex-direction: column;
+}
+.send_message_body_form_item2 textarea::placeholder {
+  font-family: "Jost", sans-serif;
+}
+.send_message_body_form_item2 textarea {
+  outline: none;
+  box-shadow: 0px 0px 15px #ababab;
+  resize: none;
+  background: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 25px;
+  margin: 10px;
+}
+.send_message_body_form_item2 button {
+  margin: 36px auto 12px;
+  width: 20%;
+  color: #f1f8e9;
+  font-family: "Jost", sans-serif;
+  background: #689f38;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  letter-spacing: 1px;
+
+  transition: all 150ms ease-out;
+}
+.send_message_body_form_item2 button:hover {
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgb(199, 199, 199);
+}
+.contact_info {
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(93, 243, 98);
+}
+.contact_info > .info_links {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+.contact_info p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.contact_info_icons {
+  padding-right: 20px;
+  font-size: 40px;
+}
+.social_media a {
+  color: black;
+}
+.social_media {
+  font-size: 50px;
+}

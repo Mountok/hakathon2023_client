@@ -8,6 +8,9 @@ import queryString from 'query-string'
 import './EventInfoStyle.css'
 
 import axios from 'axios'
+import {PORT} from '../../assets/dates/port'
+
+
 const EventInfo = () => {
     const location = useLocation();
     const [openEvent,setOpenEvent] = useState(queryString.parse(location.search).id)
@@ -16,7 +19,7 @@ const EventInfo = () => {
   
     useEffect(()=>{
         if(appState.length == 0){
-        axios.get('http://localhost:5000/rest-api/getAllEvents').then((response) => {
+        axios.get(`http://localhost:${PORT}/rest-api/getAllEvents`).then((response) => {
         console.log(response.data)    
         setAppState(response.data);
         setcurrentState(response.data.filter(value=>value.event_id==openEvent))
